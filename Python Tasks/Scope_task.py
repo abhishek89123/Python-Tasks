@@ -4,16 +4,16 @@ def account():
     account_type = "Savings"  # Enclosing variable
 
     def customer():
-        balance = 50000  # Local variable
-        print(balance)       # Local
-        print(account_type)  # Enclosing
-        print(bank)          # Global
+        balance = 50000 
+        print(balance)      
+        print(account_type)  
+        print(bank)          
 
         def transaction():
             amount = 2500
-            print(amount)        # Local
-            print(account_type)  # Enclosing
-            print(bank)          # Global
+            print(amount)        
+            print(account_type)  
+            print(bank)          
         transaction()
     customer()
 account()
